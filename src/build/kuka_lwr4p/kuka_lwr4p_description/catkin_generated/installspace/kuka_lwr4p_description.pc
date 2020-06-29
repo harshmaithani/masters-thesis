@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: kuka_lwr4p_description
+Description: Description of kuka_lwr4p_description
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

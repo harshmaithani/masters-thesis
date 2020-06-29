@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: fast_research_interface
+Description: Description of fast_research_interface
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -lFastResearchInterfaceLibrary
+Requires: roscpp

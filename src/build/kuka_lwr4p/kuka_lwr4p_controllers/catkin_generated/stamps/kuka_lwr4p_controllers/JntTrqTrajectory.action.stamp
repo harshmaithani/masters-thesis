@@ -1,0 +1,23 @@
+# kuka_lwr4p_controllers's Joint Trajectory Action
+# allows user to request a joint trajectory  by sending a list of joint position
+
+# goals def 
+std_msgs/MultiArrayLayout layout # follows the std_msgs/XXMultiArray msg def for configurations
+float64[] position
+float64[] max_vel
+float64[] max_acc
+float64[] torques
+float64[] stiffness
+float64[] damping
+
+
+---
+# results def
+float64 time
+bool done
+string msg
+
+---
+# feedback def
+int8 current_point
+float64 time 

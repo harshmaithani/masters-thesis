@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/export
+
+Name: schunk_svh_driver
+Description: Description of schunk_svh_driver
+Version: 0.1.6
+Cflags: -I/home/harsh/catkin_ws/src/export/include
+Libs: -L/home/harsh/catkin_ws/src/export/lib 
+Requires: roscpp

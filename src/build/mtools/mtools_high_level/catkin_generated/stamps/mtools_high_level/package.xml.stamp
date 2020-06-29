@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package>
+  <name>mtools_high_level</name>
+  <version>0.0.0</version>
+  <description>The mtools_high_level package</description>
+
+  <maintainer email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</maintainer>
+
+  <license>Distrubution under autorisation from IRT Jules Verne</license>
+
+  <url type="repository">https://gitlab.irt-jules-verne.fr/svandernotte/mtools</url>
+
+  <author email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>kuka_lwr4p_controllers</build_depend>
+  <build_depend>kuka_lwr4p_controllers_msgs</build_depend>
+  <build_depend>mtools_maths</build_depend>   
+  <build_depend>tf</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>roscpp</build_depend>  
+
+  <run_depend>kuka_lwr4p_controllers</run_depend>
+  <run_depend>kuka_lwr4p_controllers_msgs</run_depend>
+  <run_depend>mtools_maths</run_depend>
+  <run_depend>tf</run_depend>
+  <run_depend>sensor_msgs</run_depend>  
+  <run_depend>geometry_msgs</run_depend>  
+  <run_depend>roscpp</run_depend>    
+
+  <export></export>
+</package>

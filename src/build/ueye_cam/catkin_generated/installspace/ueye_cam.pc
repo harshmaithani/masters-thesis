@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: ueye_cam
+Description: Description of ueye_cam
+Version: 1.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -lueye_wrapper -lueye_cam_nodelet
+Requires: roscpp nodelet dynamic_reconfigure image_transport sensor_msgs camera_calibration_parsers camera_info_manager

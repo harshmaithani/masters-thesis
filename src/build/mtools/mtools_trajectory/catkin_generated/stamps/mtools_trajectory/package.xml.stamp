@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>mtools_trajectory</name>
+  <version>0.0.0</version>
+  <description>Implements trajectory generator for multi-dof robots</description>
+
+  <maintainer email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</maintainer>
+
+  <license>Distrubution under autorisation from IRT Jules Verne</license>
+
+  <url type="repository">https://gitlab.irt-jules-verne.fr/svandernotte/mtools</url>
+
+  <author email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>mtools_data_backup</build_depend>
+  <run_depend>mtools_data_backup</run_depend>
+  <build_depend>mtools_maths</build_depend>
+  <run_depend>mtools_maths</run_depend>
+
+  <export>
+  </export>
+</package>

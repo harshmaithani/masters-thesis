@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: kuka_lwr4p_collision_detection
+Description: Description of kuka_lwr4p_collision_detection
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib 
+Requires: 

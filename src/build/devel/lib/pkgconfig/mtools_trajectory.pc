@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: mtools_trajectory
+Description: Description of mtools_trajectory
+Version: 0.0.0
+Cflags: -I/home/harsh/catkin_ws/src/mtools/mtools_trajectory/include -I/usr/include/eigen3
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib -lmtools_trajectory
+Requires: 

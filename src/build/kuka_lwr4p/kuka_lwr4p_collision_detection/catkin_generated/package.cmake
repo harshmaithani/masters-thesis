@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "kuka_lwr4p_collision_detection")
+set(kuka_lwr4p_collision_detection_MAINTAINER "adminromeo <adminromeo@todo.todo>")
+set(kuka_lwr4p_collision_detection_DEPRECATED "")
+set(kuka_lwr4p_collision_detection_VERSION "0.0.0")
+set(kuka_lwr4p_collision_detection_BUILD_DEPENDS "moveit_core" "roscpp" "std_msgs")
+set(kuka_lwr4p_collision_detection_RUN_DEPENDS "moveit_core" "roscpp" "std_msgs")
+set(kuka_lwr4p_collision_detection_BUILDTOOL_DEPENDS "catkin")

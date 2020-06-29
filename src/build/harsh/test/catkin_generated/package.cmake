@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "test")
+set(test_MAINTAINER "harsh <harsh@todo.todo>")
+set(test_DEPRECATED "")
+set(test_VERSION "0.0.0")
+set(test_BUILD_DEPENDS "roscpp" "rospy" "std_msgs" "sensor_msgs" "rqt_gui")
+set(test_RUN_DEPENDS "roscpp" "rospy" "std_msgs" "sensor_msgs")
+set(test_BUILDTOOL_DEPENDS "catkin")

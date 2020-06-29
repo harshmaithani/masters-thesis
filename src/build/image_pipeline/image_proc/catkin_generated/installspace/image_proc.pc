@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: image_proc
+Description: Description of image_proc
+Version: 1.12.5
+Cflags: -I/usr/local/include -I/usr/include/opencv -I/usr/include
+Libs: -L/usr/local/lib -limage_proc -l:/usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8 -l:/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8 -l:/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
+Requires: image_geometry roscpp sensor_msgs

@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: kuka_lwr4p_controllers_msgs
+Description: Description of kuka_lwr4p_controllers_msgs
+Version: 0.0.0
+Cflags: -I/home/harsh/catkin_ws/src/build/devel/include
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib 
+Requires: message_runtime std_msgs

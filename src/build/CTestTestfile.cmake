@@ -1,0 +1,37 @@
+# CMake generated Testfile for 
+# Source directory: /home/harsh/catkin_ws/src
+# Build directory: /home/harsh/catkin_ws/src/build
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+SUBDIRS(gtest)
+SUBDIRS(image_pipeline/image_pipeline)
+SUBDIRS(kuka_lwr4p/kuka_lwr4p)
+SUBDIRS(kuka_lwr4p/kuka_lwr4p_description)
+SUBDIRS(kuka_lwr4p/moveit)
+SUBDIRS(mtools/mtools)
+SUBDIRS(mtools/mtools_data_backup)
+SUBDIRS(mtools/mtools_maths)
+SUBDIRS(mtools/mtools_trajectory)
+SUBDIRS(kuka_lwr4p/kuka_lwr4p_controllers_msgs)
+SUBDIRS(kuka_lwr4p/fast_research_interface)
+SUBDIRS(kuka_lwr4p/kuka_lwr4p_hardware_interface)
+SUBDIRS(image_pipeline/camera_calibration)
+SUBDIRS(image_pipeline/image_view)
+SUBDIRS(harsh/keypoint)
+SUBDIRS(netft)
+SUBDIRS(harsh/test)
+SUBDIRS(harsh/test2)
+SUBDIRS(image_pipeline/image_proc)
+SUBDIRS(kuka_lwr4p/kuka_lwr4p_controllers)
+SUBDIRS(kuka_lwr4p/kuka_lwr4p_high_level)
+SUBDIRS(image_pipeline/stereo_image_proc)
+SUBDIRS(image_pipeline/depth_image_proc)
+SUBDIRS(leap_client)
+SUBDIRS(mtools/mtools_high_level)
+SUBDIRS(svh_control)
+SUBDIRS(svh_test)
+SUBDIRS(image_pipeline/image_rotate)
+SUBDIRS(ueye_cam)
+SUBDIRS(kuka_lwr4p/kuka_lwr4p_collision_detection)
+SUBDIRS(schunk_svh)

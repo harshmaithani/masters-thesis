@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: moveit
+Description: Description of moveit
+Version: 0.2.0
+Cflags: 
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib 
+Requires: 

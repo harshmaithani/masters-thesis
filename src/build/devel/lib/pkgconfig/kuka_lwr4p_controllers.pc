@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: kuka_lwr4p_controllers
+Description: Description of kuka_lwr4p_controllers
+Version: 0.0.0
+Cflags: -I/home/harsh/catkin_ws/src/build/devel/include -I/home/harsh/catkin_ws/src/kuka_lwr4p/kuka_lwr4p_controllers/include
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib 
+Requires: realtime_tools controller_interface kuka_lwr4p_controllers_msgs kuka_lwr4p_hardware_interface std_msgs pluginlib actionlib message_generation mtools_trajectory mtools_data_backup mtools_maths

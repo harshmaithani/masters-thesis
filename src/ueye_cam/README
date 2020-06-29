@@ -1,0 +1,44 @@
+pour l'enregistrement :
+-----------------------------------------
+roslaunch ueye_cam setting.launch
+ _image_transport:=theora _filename_format:=frame%04i.pgm _encoding:=mono
+-----------------------------------------
+
+pour la calibration 
+-----------------------------------------
+./mono_calibrage -i ../../../image_record/ -p frame0 -e .pgm --camera-type pinhole
+-----------------------------------------
+ou 
+-----------------------------------------
+rosrun camera_calibration cameracalibrator.py --size 8x5 --square 0.1 image:=/camera1/image_raw camera:=/camera1
+-----------------------------------------
+
+
+pour le test 
+-----------------------------------------
+roslaunch ueye_cam setting.launch
+ROS_NAMESPACE=camera1 rosrun image_proc image_proc
+rosrun camera_calibration cameracheck.py --size 8x5 monocular:=/camera1 image:=image_rect
+-----------------------------------------
+
+
+
+mode stereo calibration
+-----------------------------------------
+roslaunch ueye_cam stereo.launch
+rosrun camera_calibration cameracalibrator.py --size 8x5 --square 0.10 right:=/stereo/right/image_raw left:=/stereo/left/image_raw left_camera:=/stereo/left right_camera:=/stereo/right --approximate 0.01
+
+
+mode stereo test
+-----------------------------------------
+roslaunch ueye_cam stereo.launch
+ROS_NAMESPACE=/stereo rosrun stereo_image_proc stereo_image_proc _approximate_sync:=true
+rosrun camera_calibration cameracheck.py --size 8x5 stereo:=/stereo image:=image_rect
+-----------------------------------------
+
+mode stereo view
+-----------------------------------------
+roslaunch ueye_cam stereo.launch
+ROS_NAMESPACE=/stereo rosrun stereo_image_proc stereo_image_proc _approximate_sync:=true
+rosrun image_view stereo_view stereo:=/stereo image:=image_rect _approximate_sync:=True
+-----------------------------------------

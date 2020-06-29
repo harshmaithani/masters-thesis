@@ -1,0 +1,12 @@
+<launch>
+
+  <include file="$(find schunk_svh_driver)/launch/svh_controller.launch">
+        <arg name="standalone" value="False" />
+        <arg name="simulation" value="False" />
+  </include>
+
+  <node name="contact_poses_node" pkg="schunk_svh_driver" type="contact_poses_node" output="screen" >
+    <remap from="~channel_targets" to="/svh_controller/channel_targets"/>
+  </node>
+  
+</launch>

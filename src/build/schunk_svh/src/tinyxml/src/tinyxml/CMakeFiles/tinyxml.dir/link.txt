@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -fopenmp  -Wall -Wno-long-long -msse -msse2 -ffunction-sections   -Wno-deprecated -g  -O0 -DDEBUG -D_DEBUG -D_IC_DEBUG_    -shared -Wl,-soname,libtinyxml.so -o ../../../../../devel/lib/libtinyxml.so CMakeFiles/tinyxml.dir/tinyxml.cpp.o CMakeFiles/tinyxml.dir/tinystr.cpp.o CMakeFiles/tinyxml.dir/tinyxmlerror.cpp.o CMakeFiles/tinyxml.dir/tinyxmlparser.cpp.o 

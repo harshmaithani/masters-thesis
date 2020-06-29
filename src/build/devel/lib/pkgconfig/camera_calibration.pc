@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: camera_calibration
+Description: Description of camera_calibration
+Version: 1.12.5
+Cflags: 
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib 
+Requires: 

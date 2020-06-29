@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "kuka_lwr4p_description")
+set(kuka_lwr4p_description_MAINTAINER "Sylvain Vandernotte <sylvain.vandernotte@irt-jules-verne.fr>")
+set(kuka_lwr4p_description_DEPRECATED "")
+set(kuka_lwr4p_description_VERSION "0.0.0")
+set(kuka_lwr4p_description_BUILD_DEPENDS )
+set(kuka_lwr4p_description_RUN_DEPENDS )
+set(kuka_lwr4p_description_BUILDTOOL_DEPENDS "catkin")

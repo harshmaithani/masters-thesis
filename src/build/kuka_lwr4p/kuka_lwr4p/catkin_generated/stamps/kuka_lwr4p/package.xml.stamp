@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <name>kuka_lwr4p</name>
+  <version>0.0.0</version>
+  <description>KUKA LWR4+ metapackage that include hardware interface, ros-based controller and catkinized standford's fri library</description>
+
+  <maintainer email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</maintainer>
+
+  <license>Distrubution under autorisation from IRT Jules Verne</license>
+
+  <url type="repository">https://gitlab.irt-jules-verne.fr/svandernotte/kuka_lwr4p</url>
+
+  <author email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <run_depend>fast_research_interface</run_depend>
+  <run_depend>kuka_lwr4p_controllers</run_depend>
+  <run_depend>kuka_lwr4p_description</run_depend>
+  <run_depend>kuka_lwr4p_hardware_interface</run_depend>
+  
+  <export>
+    <metapackage/>
+  </export>
+</package>

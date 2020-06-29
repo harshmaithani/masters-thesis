@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "leap_client")
+set(leap_client_MAINTAINER "juancamilog <juancamilog@todo.todo>")
+set(leap_client_DEPRECATED "")
+set(leap_client_VERSION "0.0.0")
+set(leap_client_BUILD_DEPENDS "roscpp" "std_msgs" "geometry_msgs" "visualization_msgs" "message_filters" "message_generation" "tf")
+set(leap_client_RUN_DEPENDS "roscpp" "std_msgs" "geometry_msgs" "visualization_msgs" "message_filter" "message_runtime" "tf")
+set(leap_client_BUILDTOOL_DEPENDS "catkin")

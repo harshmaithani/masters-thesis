@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: kuka_lwr4p_hardware_interface
+Description: Description of kuka_lwr4p_hardware_interface
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib 
+Requires: controller_manager fast_research_interface roscpp std_msgs message_runtime

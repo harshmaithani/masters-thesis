@@ -1,0 +1,11 @@
+<launch>
+	<node pkg="nodelet" type="nodelet" name="nodelet_manager" args="manager" output="screen" />  
+	<node pkg="nodelet" type="nodelet" name="ueye_cam_nodelet" args="load ueye_cam/ueye_cam_nodelet nodelet_manager">
+    <param name="camera_name" type="str" value="camera1" /> 
+    <param name="camera_topic" type="str" value="image_raw" />
+    <param name="camera_id" type="int" value="1" /> 
+    <param name="camera_intrinsics_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_info/camera1.yaml" /> 
+    <param name="camera_parameters_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_conf/camera1.ini" /> 
+	<param name="ext_trigger_mode" type="bool" value="False" /> 
+  </node>
+</launch>

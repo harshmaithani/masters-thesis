@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: kuka_lwr4p_high_level
+Description: Description of kuka_lwr4p_high_level
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib 
+Requires: controller_manager_msgs std_msgs mtools_trajectory roscpp actionlib kuka_lwr4p_controllers kuka_lwr4p_controllers_msgs mtools_maths

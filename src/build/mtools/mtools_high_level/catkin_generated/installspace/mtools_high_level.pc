@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: mtools_high_level
+Description: Description of mtools_high_level
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

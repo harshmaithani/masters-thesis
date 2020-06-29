@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: svh_control
+Description: Description of svh_control
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib 
+Requires: roscpp rospy std_msgs leap_client

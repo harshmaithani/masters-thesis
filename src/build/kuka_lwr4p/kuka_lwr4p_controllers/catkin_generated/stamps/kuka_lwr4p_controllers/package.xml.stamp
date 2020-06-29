@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package>
+  <name>kuka_lwr4p_controllers</name>
+  <version>0.0.0</version>
+  <description>Specific ROS Controllers for KUKA FRI</description>
+
+  <maintainer email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</maintainer>
+
+  <license>Distrubution under autorisation from IRT Jules Verne</license>
+
+  <url type="repository">https://gitlab.irt-jules-verne.fr/svandernotte/kuka_lwr4p</url>
+
+  <author email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>pluginlib</build_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>std_msgs</build_depend>  
+  <build_depend>message_generation</build_depend>  
+  <build_depend>controller_interface</build_depend>
+  <build_depend>realtime_tools</build_depend>  
+  <build_depend>kuka_lwr4p_hardware_interface</build_depend>
+  <build_depend>kuka_lwr4p_controllers_msgs</build_depend>
+  <build_depend>mtools_trajectory</build_depend>
+  <build_depend>mtools_data_backup</build_depend>  
+  <build_depend>mtools_maths</build_depend>
+  
+  <run_depend>pluginlib</run_depend>
+  <run_depend>actionlib</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>message_generation</run_depend>
+  <run_depend>controller_interface</run_depend>
+  <run_depend>realtime_tools</run_depend>
+  <run_depend>kuka_lwr4p_hardware_interface</run_depend>
+  <run_depend>kuka_lwr4p_controllers_msgs</run_depend>
+  <run_depend>mtools_trajectory</run_depend>
+  <run_depend>mtools_data_backup</run_depend>
+  <run_depend>mtools_maths</run_depend>
+
+  <export>
+      <controller_interface plugin="${prefix}/kuka_lwr4p_controllers_plugins.xml"/>
+  </export>
+</package>

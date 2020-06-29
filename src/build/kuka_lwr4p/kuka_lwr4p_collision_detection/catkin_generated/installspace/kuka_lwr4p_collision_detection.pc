@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: kuka_lwr4p_collision_detection
+Description: Description of kuka_lwr4p_collision_detection
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

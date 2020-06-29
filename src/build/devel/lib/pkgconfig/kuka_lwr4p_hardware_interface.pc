@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: kuka_lwr4p_hardware_interface
+Description: Description of kuka_lwr4p_hardware_interface
+Version: 0.0.0
+Cflags: -I/home/harsh/catkin_ws/src/build/devel/include -I/home/harsh/catkin_ws/src/kuka_lwr4p/kuka_lwr4p_hardware_interface/include
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib 
+Requires: controller_manager fast_research_interface roscpp std_msgs message_runtime

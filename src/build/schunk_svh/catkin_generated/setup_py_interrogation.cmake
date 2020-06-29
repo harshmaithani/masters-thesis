@@ -1,0 +1,6 @@
+set(schunk_svh_driver_SETUP_PY_VERSION "0.1.6")
+set(schunk_svh_driver_SETUP_PY_SCRIPTS "")
+set(schunk_svh_driver_SETUP_PY_PACKAGES "rqt_svh_reset_gui")
+set(schunk_svh_driver_SETUP_PY_PACKAGE_DIRS "src/rqt_svh_reset_gui")
+set(schunk_svh_driver_SETUP_PY_MODULES "")
+set(schunk_svh_driver_SETUP_PY_MODULE_DIRS "")

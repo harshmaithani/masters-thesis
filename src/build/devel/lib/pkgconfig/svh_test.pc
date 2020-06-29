@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: svh_test
+Description: Description of svh_test
+Version: 0.0.0
+Cflags: -I/home/harsh/catkin_ws/src/svh_test/include
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib 
+Requires: roscpp rospy std_msgs

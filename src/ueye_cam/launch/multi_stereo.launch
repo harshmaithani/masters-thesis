@@ -1,0 +1,89 @@
+<!-- launch two stereo pairs and stereo image processing -->
+<launch>
+	<arg name="frame_rate" default="10"/>
+	
+	<group ns = "stereo_front">
+	  <node pkg="nodelet" type="nodelet" name="front_manager" args="manager" output="screen" />  
+    
+	  <node pkg="nodelet" type="nodelet" name="left" args="load ueye_cam/ueye_cam_nodelet front_manager">
+	  <param name="camera_name" type="str" value="/stereo_front/left" /> 
+	  <param name="camera_topic" type="str" value="image_raw" />
+	  <param name="camera_id" type="int" value="2" /> 
+	  <param name="camera_intrinsics_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_info/stereo_left_front.yaml" /> 
+	  <param name="camera_parameters_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_conf/camera2.ini" /> 
+	  <param name="ext_trigger_mode" type="bool" value="False" /> 
+	  <param name="frame_rate" type="double" value="$(arg frame_rate)" />
+	  </node>
+	  
+	  <node pkg="nodelet" type="nodelet" name="right" args="load ueye_cam/ueye_cam_nodelet front_manager">
+	  <param name="camera_name" type="str" value="/stereo_front/right" /> 
+	  <param name="camera_topic" type="str" value="image_raw" />
+	  <param name="camera_id" type="int" value="1" /> 
+	  <param name="camera_intrinsics_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_info/stereo_right_front.yaml" /> 
+	  <param name="camera_parameters_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_conf/camera1.ini" /> 
+	  <param name="ext_trigger_mode" type="bool" value="False" /> 
+	  <param name="frame_rate" type="double" value="$(arg frame_rate)" />
+	  </node>
+	  
+	  <node pkg="stereo_image_proc" type="stereo_image_proc" name="stereo_image_proc" ns="/stereo_front">
+	  <param name="approximate_sync" type="bool" value="true"/>
+	  <param name="prefilter_size" type="double" value="115"/>
+	  <param name="prefilter_cap" type="double" value="15"/>
+	  <param name="correlation_window_size" type="double" value="21"/>
+	  <param name="min_disparity" type="double" value="82"/>
+	  <param name="disparity_range" type="double" value="128"/>
+	  <param name="uniqueness_ratio" type="double" value="2"/>
+	  <param name="texture_threshold" type="double" value="62"/>
+	  <param name="speckle_size" type="double" value="22"/>
+	  <param name="speckle_range" type="double" value="17"/>
+	  </node>
+	</group>
+
+	<group ns = "stereo_back">
+	  <node pkg="nodelet" type="nodelet" name="back_manager" args="manager" output="screen" />  
+    
+	  <node pkg="nodelet" type="nodelet" name="back_left" args="load ueye_cam/ueye_cam_nodelet back_manager">
+	  <param name="camera_name" type="str" value="/stereo_back/left" /> 
+	  <param name="camera_topic" type="str" value="image_raw" />
+	  <param name="camera_id" type="int" value="4" /> 
+	  <param name="camera_intrinsics_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_info/stereo_left_back.yaml" /> 
+	  <param name="camera_parameters_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_conf/camera4.ini" /> 
+	  <param name="ext_trigger_mode" type="bool" value="False" /> 
+	  <param name="frame_rate" type="double" value="$(arg frame_rate)" />
+	  </node>
+	  
+	  <node pkg="nodelet" type="nodelet" name="back_right" args="load ueye_cam/ueye_cam_nodelet back_manager">
+	  <param name="camera_name" type="str" value="/stereo_back/right" /> 
+	  <param name="camera_topic" type="str" value="image_raw" />
+	  <param name="camera_id" type="int" value="8" /> 
+	  <param name="camera_intrinsics_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_info/stereo_right_back.yaml" /> 
+	  <param name="camera_parameters_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_conf/camera8.ini" /> 
+	  <param name="ext_trigger_mode" type="bool" value="False" /> 
+	  <param name="frame_rate" type="double" value="$(arg frame_rate)" />
+	  </node>
+	  
+	  <node pkg="stereo_image_proc" type="stereo_image_proc" name="stereo_image_proc" ns="/stereo_back">
+	  <param name="approximate_sync" type="bool" value="true"/>
+	  <param name="prefilter_size" type="double" value="115"/>
+	  <param name="prefilter_cap" type="double" value="15"/>
+	  <param name="correlation_window_size" type="double" value="21"/>
+	  <param name="min_disparity" type="double" value="82"/>
+	  <param name="disparity_range" type="double" value="128"/>
+	  <param name="uniqueness_ratio" type="double" value="2"/>
+	  <param name="texture_threshold" type="double" value="62"/>
+	  <param name="speckle_size" type="double" value="22"/>
+	  <param name="speckle_range" type="double" value="17"/>
+	  </node>
+	  
+	  <node pkg="multi_stereo_processing" type="multi_point_cloud_processing" name="multi_point_cloud_processing">
+	  <remap from = "input1" to ="/stereo_front/points2"/>
+	   <remap from = "input2" to ="/stereo_back/points2"/>
+	  </node>
+	  
+	  <node pkg="multi_stereo_processing" type="transformation_broadcaster" name="transformation_broadcaster">
+	  </node>
+	  
+	</group>
+        
+
+</launch>

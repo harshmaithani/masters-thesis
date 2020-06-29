@@ -1,0 +1,27 @@
+<launch>
+   
+   <!-- load robot description -->
+   <param name="robot_description" command="$(find xacro)/xacro.py '$(find kuka_lwr4p_description)/urdf/kuka_lwr4p.xacro'" />
+   
+   
+   <node name="cart_msr_to_nx" pkg="tf" type="static_transform_publisher" args="0 0 .05 1.57 0 0 /cart_pose_msr /ensenso_nx 100" />   
+   
+   <node name="find_bracket_replay" pkg="mtools_high_level" type="find_bracket_replay" args="" />
+   
+   <!-- convert joint states to TF transforms for rviz, etc -->   
+   <node name="wrld_to_msr_broadcaster" pkg="tf" type="static_transform_publisher" args="0 0 0 0 0 0 /world /kuka_lwr4p_msr/world 100" />
+   <node name="robot_state_publisher_lwr4p_msr" pkg="robot_state_publisher" type="robot_state_publisher" 
+      respawn="false" output="screen">
+      <param name="tf_prefix" value="kuka_lwr4p_msr"/>
+      <remap from="/joint_states" to="/kuka_lwr4p/joint_states_msr" />
+   </node>
+   
+   <!-- Show in Rviz   -->
+   <node name="rviz" pkg="rviz" type="rviz" args="-d $(find mtools_high_level)/launch/find_bracket_replay.rviz"/>
+   
+   
+   <!-- play the bag -->
+   <node pkg="rosbag" type="play" name="player" output="screen" args="--clock $(find mtools_high_level)/bag/2014-04-17-09-19-34.bag"/>
+      
+</launch>
+

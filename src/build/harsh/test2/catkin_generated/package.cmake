@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "test2")
+set(test2_MAINTAINER "harsh <harsh@todo.todo>")
+set(test2_DEPRECATED "")
+set(test2_VERSION "0.0.0")
+set(test2_BUILD_DEPENDS "roscpp" "rospy" "std_msgs" "sensor_msgs" "rqt_gui" "cv_bridge" "image_transport")
+set(test2_RUN_DEPENDS "roscpp" "rospy" "std_msgs" "sensor_msgs" "rqt_gui" "cv_bridge" "image_transport")
+set(test2_BUILDTOOL_DEPENDS "catkin")

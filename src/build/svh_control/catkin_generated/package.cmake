@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "svh_control")
+set(svh_control_MAINTAINER "hamon <arnaud.hamon@irccyn.ec-nantes.fr>")
+set(svh_control_DEPRECATED "")
+set(svh_control_VERSION "0.0.0")
+set(svh_control_BUILD_DEPENDS "roscpp" "rospy" "std_msgs" "leap_client")
+set(svh_control_RUN_DEPENDS "roscpp" "rospy" "std_msgs" "leap_client")
+set(svh_control_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: kuka_lwr4p_controllers
+Description: Description of kuka_lwr4p_controllers
+Version: 0.0.0
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib 
+Requires: realtime_tools controller_interface kuka_lwr4p_controllers_msgs kuka_lwr4p_hardware_interface std_msgs pluginlib actionlib message_generation mtools_trajectory mtools_data_backup mtools_maths

@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: stereo_image_proc
+Description: Description of stereo_image_proc
+Version: 1.12.5
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib -lstereo_image_proc
+Requires: image_geometry image_proc sensor_msgs stereo_msgs

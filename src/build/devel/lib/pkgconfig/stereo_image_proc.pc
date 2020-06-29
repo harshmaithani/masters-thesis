@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: stereo_image_proc
+Description: Description of stereo_image_proc
+Version: 1.12.5
+Cflags: -I/home/harsh/catkin_ws/src/build/devel/include -I/home/harsh/catkin_ws/src/image_pipeline/stereo_image_proc/include
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib -lstereo_image_proc
+Requires: image_geometry image_proc sensor_msgs stereo_msgs

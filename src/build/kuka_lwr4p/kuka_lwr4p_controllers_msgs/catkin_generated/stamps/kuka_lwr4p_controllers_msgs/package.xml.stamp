@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+   <name>kuka_lwr4p_controllers_msgs</name>
+   <version>0.0.0</version>
+   <description>The kuka_lwr4p_controllers_msgs package</description>
+
+   <maintainer email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</maintainer>
+
+   <license>Distrubution under autorisation from IRT Jules Verne</license>
+
+   <url type="repository">https://gitlab.irt-jules-verne.fr/svandernotte/kuka_lwr4p</url>
+
+   <author email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</author>
+
+   <buildtool_depend>catkin</buildtool_depend>  
+
+   <build_depend>message_generation</build_depend>
+   <build_depend>std_msgs</build_depend>
+   <run_depend>message_runtime</run_depend>
+   <run_depend>std_msgs</run_depend>
+
+   <export></export>
+</package>

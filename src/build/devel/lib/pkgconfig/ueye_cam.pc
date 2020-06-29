@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: ueye_cam
+Description: Description of ueye_cam
+Version: 1.0.0
+Cflags: -I/home/harsh/catkin_ws/src/build/devel/include -I/home/harsh/catkin_ws/src/ueye_cam/include
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib -lueye_wrapper -lueye_cam_nodelet
+Requires: roscpp nodelet dynamic_reconfigure image_transport sensor_msgs camera_calibration_parsers camera_info_manager

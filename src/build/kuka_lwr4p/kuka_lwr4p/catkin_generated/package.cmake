@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "kuka_lwr4p")
+set(kuka_lwr4p_MAINTAINER "Sylvain Vandernotte <sylvain.vandernotte@irt-jules-verne.fr>")
+set(kuka_lwr4p_DEPRECATED "")
+set(kuka_lwr4p_VERSION "0.0.0")
+set(kuka_lwr4p_BUILD_DEPENDS )
+set(kuka_lwr4p_RUN_DEPENDS "fast_research_interface" "kuka_lwr4p_controllers" "kuka_lwr4p_description" "kuka_lwr4p_hardware_interface")
+set(kuka_lwr4p_BUILDTOOL_DEPENDS "catkin")

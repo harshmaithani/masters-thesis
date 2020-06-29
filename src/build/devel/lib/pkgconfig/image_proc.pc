@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: image_proc
+Description: Description of image_proc
+Version: 1.12.5
+Cflags: -I/home/harsh/catkin_ws/src/build/devel/include -I/home/harsh/catkin_ws/src/image_pipeline/image_proc/include -I/usr/include/opencv -I/usr/include
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib -limage_proc -l:/usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8 -l:/usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8 -l:/usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
+Requires: image_geometry roscpp sensor_msgs

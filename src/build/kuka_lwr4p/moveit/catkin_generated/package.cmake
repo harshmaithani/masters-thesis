@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "moveit")
+set(moveit_MAINTAINER "MoveIt Setup Assistant <assistant@moveit.ros.org>")
+set(moveit_DEPRECATED "")
+set(moveit_VERSION "0.2.0")
+set(moveit_BUILD_DEPENDS "kuka_lwr4p_description")
+set(moveit_RUN_DEPENDS "moveit_ros_move_group" "moveit_planners_ompl" "moveit_ros_visualization" "joint_state_publisher" "robot_state_publisher" "xacro" "kuka_lwr4p_description")
+set(moveit_BUILDTOOL_DEPENDS "catkin")

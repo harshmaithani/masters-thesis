@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package>
+  
+  <name>schunk_svh_driver</name>
+  <version>0.1.6</version>
+  <description>SVH Driver wrapper to enable control of the Schunk five finger hand</description>
+  
+  <maintainer email="heppner@fzi.de">Georg Heppner</maintainer>
+
+  <license>LGPL</license>
+
+  <author email="heppner@fzi.de">Georg Heppner</author>
+   <url>http://www.ros.org/wiki/schunk_svh_driver</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>rqt_gui</build_depend>
+  <build_depend>rqt_gui_py</build_depend> 
+  <build_depend>urdf</build_depend>
+  <build_depend>xacro</build_depend>
+  <build_depend>dynamic_reconfigure</build_depend>
+
+
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>rqt_gui</run_depend>
+  <run_depend>rqt_gui_py</run_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>xacro</run_depend>
+  <run_depend>dynamic_reconfigure</run_depend>
+  
+  <export>
+ 	<rqt_gui plugin="${prefix}/plugin.xml" />
+        <rosdoc config="etc/rosdoc.yaml" />
+  </export>
+  
+</package>

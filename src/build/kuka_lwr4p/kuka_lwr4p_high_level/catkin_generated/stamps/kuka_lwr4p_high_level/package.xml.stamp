@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package>
+  <name>kuka_lwr4p_high_level</name>
+  <version>0.0.0</version>
+  <description>Implementation of high level function for KUKA LWR4+</description>
+
+  <maintainer email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</maintainer>
+
+  <license>Distrubution under autorisation from IRT Jules Verne</license>
+
+  <url type="repository">https://gitlab.irt-jules-verne.fr/svandernotte/kuka_lwr4p</url>
+
+  <author email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <run_depend>roscpp</run_depend>
+  <run_depend>controller_manager_msgs</run_depend>
+  <run_depend>mtools_trajectory</run_depend>
+  <run_depend>mtools_maths</run_depend>
+  <run_depend>std_msgs</run_depend>  
+  <run_depend>actionlib</run_depend>  
+  <run_depend>kuka_lwr4p_controllers</run_depend>  
+  <run_depend>kuka_lwr4p_controllers_msgs</run_depend>    
+
+  
+  <build_depend>roscpp</build_depend>
+  <build_depend>controller_manager_msgs</build_depend>
+  <build_depend>mtools_trajectory</build_depend>
+  <build_depend>mtools_maths</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>actionlib</build_depend>
+  <build_depend>kuka_lwr4p_controllers</build_depend>
+  <build_depend>kuka_lwr4p_controllers_msgs</build_depend>  
+
+  
+  <export>   
+  </export>
+</package>

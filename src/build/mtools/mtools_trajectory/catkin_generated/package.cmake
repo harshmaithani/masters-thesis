@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mtools_trajectory")
+set(mtools_trajectory_MAINTAINER "Sylvain Vandernotte <sylvain.vandernotte@irt-jules-verne.fr>")
+set(mtools_trajectory_DEPRECATED "")
+set(mtools_trajectory_VERSION "0.0.0")
+set(mtools_trajectory_BUILD_DEPENDS "mtools_data_backup" "mtools_maths")
+set(mtools_trajectory_RUN_DEPENDS "mtools_data_backup" "mtools_maths")
+set(mtools_trajectory_BUILDTOOL_DEPENDS "catkin")

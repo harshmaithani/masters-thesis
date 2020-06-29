@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "schunk_svh_driver")
+set(schunk_svh_driver_MAINTAINER "Georg Heppner <heppner@fzi.de>")
+set(schunk_svh_driver_DEPRECATED "")
+set(schunk_svh_driver_VERSION "0.1.6")
+set(schunk_svh_driver_BUILD_DEPENDS "roscpp" "std_msgs" "sensor_msgs" "rospy" "rqt_gui" "rqt_gui_py" "urdf" "xacro" "dynamic_reconfigure")
+set(schunk_svh_driver_RUN_DEPENDS "roscpp" "std_msgs" "sensor_msgs" "rospy" "rqt_gui" "rqt_gui_py" "urdf" "xacro" "dynamic_reconfigure")
+set(schunk_svh_driver_BUILDTOOL_DEPENDS "catkin")

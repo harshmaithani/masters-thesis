@@ -1,0 +1,22 @@
+<launch>
+	<node pkg="nodelet" type="nodelet" name="nodelet_manager" args="manager" output="screen" />  
+	
+	<node pkg="nodelet" type="nodelet" name="left" args="load ueye_cam/ueye_cam_nodelet nodelet_manager">
+	<param name="camera_name" type="str" value="/stereo_front/left" /> 
+	<param name="camera_topic" type="str" value="image_raw" />
+	<param name="camera_id" type="int" value="2" /> 
+	<param name="camera_intrinsics_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_info/stereo_left_front.yaml" /> 
+	<param name="camera_parameters_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_conf/camera2.ini" /> 
+	<param name="ext_trigger_mode" type="bool" value="False" /> 
+	</node>
+	
+	<node pkg="nodelet" type="nodelet" name="right" args="load ueye_cam/ueye_cam_nodelet nodelet_manager">
+	<param name="camera_name" type="str" value="/stereo_front/right" /> 
+	<param name="camera_topic" type="str" value="image_raw" />
+	<param name="camera_id" type="int" value="1" /> 
+	<param name="camera_intrinsics_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_info/stereo_right_front.yaml" /> 
+	<param name="camera_parameters_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_conf/camera1.ini" /> 
+	<param name="ext_trigger_mode" type="bool" value="False" /> 
+        </node>
+  
+</launch>

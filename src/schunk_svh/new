@@ -1,0 +1,119 @@
+Normal state-
+rostopic pub /svh_controller/channel_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['Index_Finger_Proximal','Index_Finger_Distal','Middle_Finger_Proximal','Middle_Finger_Distal','Ring_Finger','Pinky','Finger_Spread','Thumb_Flexion','Thumb_Opposition']
+position: [0.0,0.0,0.0,0.0,0.0,0.0,0.5,0.0,0.0]"
+
+Fingers wide open
+rostopic pub /svh_controller/channel_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['Index_Finger_Proximal','Index_Finger_Distal','Middle_Finger_Proximal','Middle_Finger_Distal','Ring_Finger','Pinky','Finger_Spread','Thumb_Flexion','Thumb_Opposition']
+position: [0.0,0.0,0.0,0.0,0.0,0.0,0.6,0.0,0.0]"
+
+Fist-
+rostopic pub /svh_controller/channel_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['Index_Finger_Proximal','Index_Finger_Distal','Middle_Finger_Proximal','Middle_Finger_Distal','Ring_Finger','Pinky','Finger_Spread','Thumb_Flexion','Thumb_Opposition']
+position: [0.8,1.3,0.8,1.3,0.9,0.9,0.5,0.3,0.1]"
+
+
+2-finger pinch
+rostopic pub /svh_controller/channel_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['Index_Finger_Proximal','Index_Finger_Distal','Middle_Finger_Proximal','Middle_Finger_Distal','Ring_Finger','Pinky','Finger_Spread','Thumb_Flexion','Thumb_Opposition']
+position: [0.3,1.0,0.3,1.0,0.0,0.0,0.5,0.4,0.9]"
+
+config1
+rostopic pub /svh_controller/channel_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['Index_Finger_Proximal','Index_Finger_Distal','Middle_Finger_Proximal','Middle_Finger_Distal','Ring_Finger','Pinky','Finger_Spread','Thumb_Flexion','Thumb_Opposition']
+position: [0.8,0.0,0.8,0.0,0.4,0.2,0.7,0.0,0.0]"
+
+holding book
+rostopic pub /svh_controller/channel_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['Index_Finger_Proximal','Index_Finger_Distal','Middle_Finger_Proximal','Middle_Finger_Distal','Ring_Finger','Pinky','Finger_Spread','Thumb_Flexion','Thumb_Opposition']
+position: [0.5,0.0,0.5,0.0,0.4,0.2,0.7,0.5,0.0]"
+
+config3 support with side of thumb
+rostopic pub /svh_controller/channel_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['Index_Finger_Proximal','Index_Finger_Distal','Middle_Finger_Proximal','Middle_Finger_Distal','Ring_Finger','Pinky','Finger_Spread','Thumb_Flexion','Thumb_Opposition']
+position: [0.0,0.0,0.0,0.0,0.0,0.0,0.7,0.9,0.0]"
+
+rostopic pub /svh_controller/channel_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['Index_Finger_Proximal','Index_Finger_Distal','Middle_Finger_Proximal','Middle_Finger_Distal','Ring_Finger','Pinky','Finger_Spread','Thumb_Flexion','Thumb_Opposition']
+position: [0.8,1.3,0.8,1.3,0.9,0.9,0.7,0.9,0.0]"
+
+holding plate
+rostopic pub /svh_controller/channel_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['Index_Finger_Proximal','Index_Finger_Distal','Middle_Finger_Proximal','Middle_Finger_Distal','Ring_Finger','Pinky','Finger_Spread','Thumb_Flexion','Thumb_Opposition']
+position: [0.5,0.0,0.5,0.0,0.2,0.2,0.7,0.5,0.9]"
+
+
+small clasp
+rostopic pub /svh_controller/channel_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['Index_Finger_Proximal','Index_Finger_Distal','Middle_Finger_Proximal','Middle_Finger_Distal','Ring_Finger','Pinky','Finger_Spread','Thumb_Flexion','Thumb_Opposition']
+position: [0.5,0.5,0.5,0.5,0.0,0.0,0.4,0.0,0.0]"
+
+pipe clasping
+rostopic pub /svh_controller/channel_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['Index_Finger_Proximal','Index_Finger_Distal','Middle_Finger_Proximal','Middle_Finger_Distal','Ring_Finger','Pinky','Finger_Spread','Thumb_Flexion','Thumb_Opposition']
+position: [0.0,0.0,0.0,0.0,0.0,0.0,0.7,0.0,0.0]"
+
+rostopic pub /svh_controller/channel_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['Index_Finger_Proximal','Index_Finger_Distal','Middle_Finger_Proximal','Middle_Finger_Distal','Ring_Finger','Pinky','Finger_Spread','Thumb_Flexion','Thumb_Opposition']
+position: [0.0,0.0,0.0,0.0,0.9,0.0,0.7,0.9,0.9]"
+
+rostopic pub /svh_controller/channel_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['Index_Finger_Proximal','Index_Finger_Distal','Middle_Finger_Proximal','Middle_Finger_Distal','Ring_Finger','Pinky','Finger_Spread','Thumb_Flexion','Thumb_Opposition']
+position: [0.8,0.0,0.8,0.0,0.9,0.0,0.7,0.9,0.9]"
+
+rostopic pub /svh_controller/channel_targets sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['Index_Finger_Proximal','Index_Finger_Distal','Middle_Finger_Proximal','Middle_Finger_Distal','Ring_Finger','Pinky','Finger_Spread','Thumb_Flexion','Thumb_Opposition']
+position: [0.8,0.5,0.8,0.5,0.9,0.9,0.7,0.9,0.9]"
+
+
+
+
+
+
+
+
+
+

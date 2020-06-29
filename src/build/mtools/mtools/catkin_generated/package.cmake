@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mtools")
+set(mtools_MAINTAINER "Sylvain Vandernotte <sylvain.vandernotte@irt-jules-verne.fr>")
+set(mtools_DEPRECATED "")
+set(mtools_VERSION "0.0.0")
+set(mtools_BUILD_DEPENDS )
+set(mtools_RUN_DEPENDS )
+set(mtools_BUILDTOOL_DEPENDS "catkin")

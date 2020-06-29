@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: image_view
+Description: Description of image_view
+Version: 1.12.5
+Cflags: 
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib 
+Requires: 

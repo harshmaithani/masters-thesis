@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: image_rotate
+Description: Description of image_rotate
+Version: 1.12.5
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib 
+Requires: 

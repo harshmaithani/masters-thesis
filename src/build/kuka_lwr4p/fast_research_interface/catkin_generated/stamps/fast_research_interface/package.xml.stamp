@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <name>fast_research_interface</name>
+  <version>0.0.0</version>
+  <description>Catkinized Standford's FRI middleware</description>
+
+  <maintainer email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</maintainer>
+  
+  <license>Distrubution under autorisation from IRT Jules Verne</license>
+  
+  <url type="repository">https://gitlab.irt-jules-verne.fr/svandernotte/kuka_lwr4p</url>
+  <url type="website">http://cs.stanford.edu/people/tkr/fri/html/</url>
+
+  <author email="tkr@stanford.edu">Torsten Kroeger</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  
+  <run_depend>roscpp</run_depend>
+
+  <export>
+  </export>
+</package>

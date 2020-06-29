@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package>
+  <name>kuka_lwr4p_hardware_interface</name>
+  <version>0.0.0</version>
+  <description>Hardware interface to control real robot</description>
+
+  <maintainer email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</maintainer>
+  
+  <license>Distrubution under autorisation from IRT Jules Verne</license>
+  
+  <url type="repository">https://gitlab.irt-jules-verne.fr/svandernotte/kuka_lwr4p</url>
+  
+  <author email="sylvain.vandernotte@irt-jules-verne.fr">Sylvain Vandernotte</author>
+    
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>fast_research_interface</build_depend>
+  <build_depend>controller_manager</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  
+  <run_depend>fast_research_interface</run_depend>
+  <run_depend>controller_manager</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+
+  <export>
+  </export>
+</package>

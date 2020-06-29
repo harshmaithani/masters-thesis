@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: test
+Description: Description of test
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib -llistener
+Requires: roscpp rospy std_msgs sensor_msgs

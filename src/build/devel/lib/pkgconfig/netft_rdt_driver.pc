@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: netft_rdt_driver
+Description: Description of netft_rdt_driver
+Version: 0.2.0
+Cflags: -I/home/harsh/catkin_ws/src/netft/include
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib -lnetft_rdt_driver
+Requires: roscpp diagnostic_updater diagnostic_msgs geometry_msgs

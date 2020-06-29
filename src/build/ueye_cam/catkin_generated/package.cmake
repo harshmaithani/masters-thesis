@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "ueye_cam")
+set(ueye_cam_MAINTAINER "Anqi Xu <anqixu@cim.mcgill.ca>")
+set(ueye_cam_DEPRECATED "")
+set(ueye_cam_VERSION "1.0.0")
+set(ueye_cam_BUILD_DEPENDS "roscpp" "nodelet" "dynamic_reconfigure" "opencv2" "image_transport" "sensor_msgs" "camera_calibration_parsers" "camera_info_manager")
+set(ueye_cam_RUN_DEPENDS "roscpp" "nodelet" "dynamic_reconfigure" "opencv2" "image_transport" "sensor_msgs" "camera_calibration_parsers" "camera_info_manager")
+set(ueye_cam_BUILDTOOL_DEPENDS "catkin")

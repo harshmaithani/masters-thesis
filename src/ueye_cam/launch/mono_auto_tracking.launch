@@ -1,0 +1,41 @@
+<launch>
+	<arg name="manager" value="visp_nodelet_manager"/>
+	<arg name="respawn" default="true" />
+	<arg     if="$(arg respawn)" name="bond" value="" />
+	<arg unless="$(arg respawn)" name="bond" value="--no-bond" />
+	
+	<!-- Launch the ueye camera node -->
+	<node pkg="nodelet" type="nodelet" name="$(arg manager)" args="manager"/>  
+	
+	<node pkg="nodelet" type="nodelet" name="ueye_cam_nodelet" args="load ueye_cam/ueye_cam_nodelet $(arg manager)">
+		<param name="camera_name" type="str" value="/camera" /> 
+		<param name="camera_topic" type="str" value="image_raw" />
+		<param name="camera_id" type="int" value="2" /> 
+		<param name="camera_intrinsics_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_info/camera2.yaml" /> 
+		<param name="camera_parameters_file" type="string" value="/home/adminromeo/catkin_ws/src/ueye_cam/param/camera_conf/camera2.ini" /> 
+		<param name="ext_trigger_mode" type="bool" value="False" /> 
+	</node>
+	
+	<!-- Debayered images -->
+	<node pkg="nodelet" type="nodelet" name="debayer" args="load image_proc/debayer $(arg manager) $(arg bond)" respawn="$(arg respawn)" />
+  
+  	<!-- Launch the image_proc node -->
+	<node pkg="nodelet" type="nodelet" name="rectify_mono" args="load image_proc/rectify $(arg manager)" output="screen">
+	      <remap from="camera" to="/camera/image_raw"/>
+	</node>
+	
+	<!-- Launch the tracking node -->
+	<node pkg="nodelet" type="nodelet" name="tracker" args="load visp_tracker/Tracker $(arg manager)">
+	      <param name="camera_prefix" value="/camera" />
+	</node>
+	
+	<!-- Launch the client (GUI) -->
+	<node pkg="nodelet" type="nodelet" name="visp_tracker_client" args="load visp_tracker/TrackerClient $(arg manager)">
+	      <param name="model_path" value="package://visp_tracker/models" />
+	      <param name="model_name" value="laas-box" />
+	      <rosparam file="$(find visp_tracker)/models/laas-box/tracker.yaml" />
+	</node>
+
+	<!-- Launch the viewer (GUI) -->
+	<node pkg="nodelet" type="nodelet" name="visp_tracker_viewer" args="load visp_tracker/TrackerViewer $(arg manager)" />
+</launch>

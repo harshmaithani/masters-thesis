@@ -1,0 +1,8 @@
+prefix=/home/harsh/catkin_ws/src/build/devel
+
+Name: image_rotate
+Description: Description of image_rotate
+Version: 1.12.5
+Cflags: -I/home/harsh/catkin_ws/src/build/devel/include
+Libs: -L/home/harsh/catkin_ws/src/build/devel/lib 
+Requires: 
